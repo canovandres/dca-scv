@@ -141,3 +141,9 @@ void
 TComplejo::Im(const double newim){
 	im = newim;
 }
+
+double
+TComplejo::Arg(void){
+	double a = atan2(im, re);
+	return a;
+}
