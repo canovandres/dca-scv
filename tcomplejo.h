@@ -27,6 +27,11 @@ class TComplejo {
 		
 		bool operator== (const TComplejo&);
 		bool operator!= (const TComplejo&);
+
+		double Re();
+		double Im();
+		void Re(const double);
+		void Im(const double);
 };
 
 #endif

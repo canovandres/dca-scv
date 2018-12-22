@@ -121,3 +121,23 @@ bool
 TComplejo::operator!=(const TComplejo& complejo){
 	return !((*this) == complejo);
 }
+
+double
+TComplejo::Re(){
+	return re;
+}
+
+double
+TComplejo::Im(){
+	return im;
+}
+
+void
+TComplejo::Re(const double newre){
+	re = newre;
+}
+
+void
+TComplejo::Im(const double newim){
+	im = newim;
+}
