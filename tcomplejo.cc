@@ -15,6 +15,45 @@ TComplejo::~TComplejo(){
 }
 
 TComplejo
+TComplejo::operator+(const TComplejo &otro){
+	TComplejo temp;
+
+	temp.re = re + otro.re;
+	temp.im = re + otro.re;
+
+	temp.re = cambioCero(temp.re);
+	temp.im = cambioCero(temp.im);
+
+	return temp;
+}
+
+TComplejo
+TComplejo::operator-(const TComplejo &otro){
+	TComplejo temp;
+
+	temp.re = re - otro.re;
+	temp.im = im - otro.im;
+
+	temp.re = cambioCero(temp.re);
+	temp.im = cambioCero(temp.im);
+
+	return temp;
+}
+
+TComplejo
+TComplejo::operator*(const TComplejo &otro){
+	TComplejo temp;
+
+	temp.re = (re * otro.re - im * otro.im);
+	temp.im = (re * otro.im + im * otro.re);
+
+	temp.re = cambioCero(temp.re);
+	temp.im = cambioCero(temp.im);
+
+	return temp;
+}
+
+TComplejo
 TComplejo::operator+(const double num){
 	TComplejo otro(num);
 	TComplejo temp;

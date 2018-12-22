@@ -18,6 +18,9 @@ class TComplejo {
 		TComplejo(const TComplejo&);
 		~TComplejo();
 		
+		TComplejo operator+ (const TComplejo&);
+		TComplejo operator- (const TComplejo&);
+		TComplejo operator* (const TComplejo&);
 		TComplejo operator+ (const double);
 		TComplejo operator- (const double);
 		TComplejo operator* (const double);
