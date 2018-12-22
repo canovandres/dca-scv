@@ -17,6 +17,10 @@ class TComplejo {
 		TComplejo(double = 0, double = 0);
 		TComplejo(const TComplejo&);
 		~TComplejo();
+		
+		TComplejo operator+ (const double);
+		TComplejo operator- (const double);
+		TComplejo operator* (const double);
 };
 
 #endif

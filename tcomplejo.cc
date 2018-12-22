@@ -14,6 +14,45 @@ TComplejo::~TComplejo(){
 	re = im = 0;
 }
 
+TComplejo
+TComplejo::operator+(const double num){
+	TComplejo otro(num);
+	TComplejo temp;
+
+	temp = (*this) + otro;
+
+	temp.re = cambioCero(temp.re);
+	temp.im = cambioCero(temp.im);
+
+	return temp;
+}
+
+TComplejo
+TComplejo::operator-(const double num){
+	TComplejo otro(num);
+	TComplejo temp;
+
+	temp = (*this) - otro;
+
+	temp.re = cambioCero(temp.re);
+	temp.im = cambioCero(temp.im);
+
+	return temp;
+}
+
+TComplejo
+TComplejo::operator*(const double num){
+	TComplejo otro(num);
+	TComplejo temp;
+
+	temp = (*this) * otro;
+
+	temp.re = cambioCero(temp.re);
+	temp.im = cambioCero(temp.im);
+
+	return temp;
+}
+
 ostream&
 operator<<(ostream &s, const TComplejo &obj){
 	s << "(" << obj.re << " " << obj.im << ")";
