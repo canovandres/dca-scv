@@ -33,6 +33,7 @@ class TComplejo {
 		void Re(const double);
 		void Im(const double);
 		double Arg(void);
+		double Mod(void);
 };
 
 #endif

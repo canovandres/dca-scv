@@ -147,3 +147,9 @@ TComplejo::Arg(void){
 	double a = atan2(im, re);
 	return a;
 }
+
+double
+TComplejo::Mod(void){
+	double m = sqrt(pow(re, 2) + pow(im, 2));
+	return m;
+}
