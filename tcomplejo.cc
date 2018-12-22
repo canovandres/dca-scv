@@ -107,3 +107,17 @@ TComplejo::cambioCero(double num){
 		return num;
 	}
 }
+
+bool
+TComplejo::operator==(const TComplejo& complejo){
+	bool temp;
+
+	temp = (re == complejo.re && im == complejo.im) ? true : false;
+
+	return temp;
+}
+
+bool
+TComplejo::operator!=(const TComplejo& complejo){
+	return !((*this) == complejo);
+}

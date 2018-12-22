@@ -24,6 +24,9 @@ class TComplejo {
 		TComplejo operator+ (const double);
 		TComplejo operator- (const double);
 		TComplejo operator* (const double);
+		
+		bool operator== (const TComplejo&);
+		bool operator!= (const TComplejo&);
 };
 
 #endif
