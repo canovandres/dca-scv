@@ -19,7 +19,7 @@ TComplejo::operator+(const TComplejo &otro){
 	TComplejo temp;
 
 	temp.re = re + otro.re;
-	temp.im = re + otro.re;
+	temp.im = im + otro.im;
 
 	temp.re = cambioCero(temp.re);
 	temp.im = cambioCero(temp.im);
